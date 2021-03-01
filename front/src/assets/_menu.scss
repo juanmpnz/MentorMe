@@ -1,0 +1,36 @@
+@import "./_colors.scss";
+
+.container-menu {
+  width: 100%;
+  min-height: 100%;
+  bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  min-height: 9vh;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.04);
+  @media (min-width: 767px) {    
+      display: none;    
+  }
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+}
+.footer-icons {
+  color: #fff;
+}
+.badge {
+  color: $meColor;
+}
+
+//
+//$mentorColor

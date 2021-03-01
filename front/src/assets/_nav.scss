@@ -1,0 +1,107 @@
+@import "./_colors.scss";
+
+.container {
+  height: 12vh;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 767px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .menuDesktop {
+    display: none;
+    @media screen and (min-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 12vh;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+
+        li {
+          text-transform: uppercase;
+          color: #fff;
+          list-style: none;
+          margin: 0 10px;
+        }
+        li:hover {
+          color: $meColor;
+        }
+        li:active {
+          border-bottom: 2px solid $meColor;
+        }
+        .linkDesktop {
+          text-decoration: none;
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .logo {
+    margin: 1vh 2vh 0vh 0vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4vh;
+    color: $mentorColor;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    @media (min-width: 767px) {
+      display: none;
+      width: 0;
+      margin: 0;
+    }
+  }
+
+  .logo2 {
+    display: none;
+    @media screen and (min-width: 767px) {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 4vh;
+      color: $mentorColor;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-right: 75vh;
+    }
+  }
+
+  span {
+    color: $meColor;
+    font-size: 1em;
+    position: relative;
+    bottom: 2.5vh;
+  }
+  .burgerDesktop {
+    @media screen and (min-width: 767px) {
+      width: 0;
+      margin: 0;
+    }
+  }
+}
+.burgerDesktop {
+  @media (min-width: 767px) {
+    width: 0;
+    margin: 0;
+  }
+}
+
+.burger {
+  margin: 4vh 2vh 0vh 0vh;
+}

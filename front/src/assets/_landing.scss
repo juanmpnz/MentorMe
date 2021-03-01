@@ -1,0 +1,27 @@
+@import "./_colors";
+
+.App {  
+  height: 100vh;
+  text-align: center;
+  background: $landingBgColor;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 5em;
+  color: $mentorColor;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none; 
+    span{
+      color:$meColor ;
+      font-size: 1em;
+      position: relative;
+      bottom: 54px;
+      left: 113px;
+    }
+}
